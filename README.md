@@ -45,7 +45,7 @@ etc. -->
 *   [in-toto](https://in-toto.io) (as described in [ITE-5](https://github.com/in-toto/ITE/blob/master/ITE/5/README.adoc), [go](https://github.com/in-toto/go-witness/tree/main/dsse), [python](https://github.com/in-toto/in-toto/blob/d8fa07f5c3c3e052319b1a9b0c06408cdf5b5185/in_toto/common_args.py#L170))
 *   [TUF](https://theupdateframework.io) (pending implementation of [TAP-17](https://github.com/theupdateframework/taps/pull/138))
 *   [gittuf](https://gittuf.dev) (implemented with extensions in [go](https://github.com/gittuf/gittuf/tree/main/internal/third_party/go-securesystemslib/dsse))
-*   [Sigstore](https://sigstore.dev) supports DSSE as an [entry type](https://github.com/sigstore/rekor/tree/main/pkg/types/dsse)
+*   [Sigstore](https://sigstore.dev) supports DSSE as an [entry type](https://github.com/sigstore/rekor-tiles/blob/main/api/proto/rekor/v2/dsse.proto) in Rekor, Sigstore's transparency log
 *   [Chainguard Images](https://www.chainguard.dev/unchained/reproducing-chainguards-reproducible-image-builds) use sigstore and in-toto (see above), and support DSSE
 *   [GUAC](https://guac.sh/) [supports DSSE entries](https://github.com/guacsec/guac/blob/main/pkg/ingestor/parser/dsse/parser_dsse.go) as a data type
 *   [JFrog](https://jfrog.com/) has a [free DSSE Attestation Online Decoder Tool](https://dsse.io/)
@@ -54,7 +54,7 @@ etc. -->
 
 * There is a Python implementation in [this repository](implementation/).
 * There's a DSSE library for Go in [go-securesystemslib](https://github.com/secure-systems-lab/go-securesystemslib/tree/main/dsse).
-* SigStore includes a [Go implementation](https://github.com/sigstore/sigstore/tree/main/pkg/signature/dsse)
+* Sigstore includes a [Go implementation](https://github.com/sigstore/sigstore/tree/main/pkg/signature/dsse)
   that supports hardware tokens, cloud KMS systems, and more.
 
 ## Versioning
